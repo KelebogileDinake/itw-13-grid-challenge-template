@@ -1,4 +1,5 @@
-body, html {
+body,
+html {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -7,7 +8,7 @@ body, html {
     position: sticky;
     top: 0;
     background-color: black;
-    color:white;
+    color: white;
 }
 
 /* ===== Aside ====== */
@@ -40,7 +41,8 @@ nav {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
-.nav-button > button{
+
+.nav-button>button {
     width: 100%;
     height: 100%;
 }
@@ -58,9 +60,7 @@ a {
 
 /* ===== main ====== */
 
-main {
-
-}
+main {}
 
 .main-content {
     padding: 1.25rem;
@@ -72,14 +72,15 @@ main {
     position: sticky;
     top: 5rem;
 }
+
 .aside-link:hover {
     border-radius: 7px;
     padding: 2px;
     margin-bottom: 5px;
     background-color: rgba(0, 0, 0, 0.795);
-    color: whitesmoke;   
+    color: whitesmoke;
 }
-   
+
 
 /* ===== Category ===== */
 
@@ -92,6 +93,16 @@ main {
     background-color: rgb(226, 204, 172);
     margin: 0.25rem;
 }
+.row-span-2{
+    grid-template-rows: auto auto;
+    
+}
+
+
+
+
+ 
+
 .category:hover {
 
     background-color: rgb(155, 100, 55);
@@ -101,6 +112,7 @@ main {
 button {
     background-color: rgb(226, 204, 172);
 }
+
 button:hover {
     background-color: rgb(155, 100, 55);
     color: white;
@@ -113,7 +125,7 @@ button:hover {
     text-align: center;
 }
 
-.sponsors > div {
+.sponsors>div {
     background-color: whitesmoke;
     margin: 2rem;
 }
@@ -128,17 +140,13 @@ button:hover {
     text-align: center;
 }
 
-#footer > div {
+#footer>div {
     margin-bottom: 2rem;
 }
 
 
 /* ===== grid modifiers ===== */
 
-.col-span-2 {
+.col-span-2 {}
 
-}
-
-.row-span-2 {
-
-}
+.row-span-2 {}
