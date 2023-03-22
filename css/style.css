@@ -1,5 +1,4 @@
-body,
-html {
+body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -60,7 +59,11 @@ a {
 
 /* ===== main ====== */
 
-main {}
+main {
+    display: grid;
+    grid-template-areas: 
+    "section section aside";
+}
 
 .main-content {
     padding: 1.25rem;
@@ -85,6 +88,7 @@ main {}
 /* ===== Category ===== */
 
 .categories {
+    display: grid;
     text-align: center;
 }
 
@@ -94,8 +98,12 @@ main {}
     margin: 0.25rem;
 }
 .row-span-2{
-    grid-template-rows: auto auto;
-    
+    grid-column: 3;
+    grid-row: 1/3;
+}
+.col-span-2{
+    grid-column: 1/3;
+    grid-row: 2;
 }
 
 
@@ -117,15 +125,19 @@ button:hover {
     background-color: rgb(155, 100, 55);
     color: white;
 }
-
+/**/
+/*article{
+    display: grid;
+}*/
 /* ===== Sponsor ====== */
 
 .sponsors {
     display: grid;
+    grid-template-columns: auto auto auto;
     text-align: center;
 }
 
-.sponsors>div {
+sponsors>div {
     background-color: whitesmoke;
     margin: 2rem;
 }
@@ -147,6 +159,14 @@ button:hover {
 
 /* ===== grid modifiers ===== */
 
-.col-span-2 {}
+.col-span-2{
+    grid-column: 2/4;
+    background-color: whitesmoke;
+    margin: 2rem;
+}
 
-.row-span-2 {}
+.row-span-2{
+    grid-row: 1/2;
+    background-color: whitesmoke;
+    margin: 2rem;
+}
